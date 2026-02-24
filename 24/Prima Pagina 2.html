@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La mia pagina moderna</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #2ecc71; 
+            --dark-color: #2c3e50;
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--dark-color);
+            margin: 0;
+            padding-left: 220px; 
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        
+        .navbar {
+            list-style-type: none;
+            padding: 20px 0;
+            margin: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 180px;
+            height: 100%;
+            background-color: white;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+        }
+
+        .navbar li {
+            margin: 10px 0;
+        }
+
+        .navbar a {
+            display: block;
+            padding: 12px 20px;
+            text-decoration: none;
+            color: var(--dark-color);
+            font-weight: 400;
+            border-left: 4px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: var(--light-bg);
+            border-left: 4px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        
+        main {
+            padding: 40px;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-weight: 700;
+            color: var(--dark-color);
+            border-bottom: 3px solid var(--primary-color);
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+
+        
+        address {
+            margin-top: auto;
+            padding: 20px;
+            font-style: normal;
+            font-size: 0.9em;
+            color: #7f8c8d;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">La mia città</a></li>
+        <li><a href="#">Bio</a></li>
+        <li><a href="#">Contatti</a></li>
+    </ul>
+
+    <main>
+        <h1>La mia prima pagina con stile!</h1>
+
+        <p>Benvenuti nella mia pagina! Ho aggiornato il look per renderlo più pulito.<br>
+           Ora la navigazione è fissa a sinistra, così non si perde mai di vista, 
+           e i colori sono più riposanti per gli occhi.
+        </p>
+        
+        <p>Il segreto del design moderno? <strong>Spazio bianco</strong> e <strong>contrasti leggeri</strong>.</p>
+    </main>
+
+    <footer>
+        <address>
+            Aggiornato il 24 Febbraio 2026<br>
+            Creato con cura da Me
+        </address>
+    </footer>
+
+</body>
+</html>
