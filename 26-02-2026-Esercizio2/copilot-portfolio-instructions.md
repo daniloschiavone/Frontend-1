@@ -5,7 +5,7 @@
 
 ---
 # !!MUST!! 
-STYLING RULE [PRIORITY: CRITICAL]:
+## STYLING RULE [PRIORITY: CRITICAL]:
 
 Utilizza esclusivamente Bootstrap per tutto il CSS e il layout.
 
