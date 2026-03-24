@@ -33,16 +33,16 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #1abc9c;
-  --bs-secondary: #2c3e50;
+  --bs-primary: #FF00FF;
+  --bs-secondary: #00FFFF;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 26, 188, 156;
-  --bs-secondary-rgb: 44, 62, 80;
+  --bs-primary-rgb: 255, 0, 255;
+  --bs-secondary-rgb: 0, 255, 255;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -52,7 +52,7 @@
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-body-bg-rgb: 0, 0, 0;
   --bs-font-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -60,8 +60,8 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-color: #39FF14;
+  --bs-body-bg: #000000;
 }
 
 *,
@@ -11442,7 +11442,9 @@ html {
   font-size: 1.25rem;
 }
 .masthead .masthead-avatar {
-  width: 15rem;
+  width: 30rem;
+  max-width: 100%;
+  height: auto;
 }
 
 @media (min-width: 992px) {
@@ -11481,6 +11483,14 @@ html {
   font-size: 1.5rem;
 }
 
+#portfolio {
+  background: linear-gradient(135deg, #d9ff00 0%, #7dff00 100%);
+}
+
+#contact {
+  background: linear-gradient(135deg, #00ff9d 0%, #c6ff00 100%);
+}
+
 .portfolio-modal .btn-close {
   color: #1abc9c;
   font-size: 2rem;
@@ -11500,10 +11510,10 @@ html {
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #2c3e50;
+  background: linear-gradient(135deg, #0b0f12 0%, #122018 55%, #0d1b22 100%);
   color: #fff;
 }
 
 .copyright {
-  background-color: #1a252f;
+  background: linear-gradient(135deg, #06090c 0%, #0b1511 100%);
 }
